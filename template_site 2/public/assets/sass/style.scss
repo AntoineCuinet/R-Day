@@ -1,8 +1,0 @@
-@import 'mixins/transform'; // import des mixins (à faire obligatoirement avant les variables !)
-
-@import 'partiels/variables'; // import des variable, pas besoin de _ ni de l'extention
-@import 'partiels/resets';
-@import 'partiels/body';
-@import 'partiels/template';
-
-@import 'extensions/policeSpan'; // à déclarer à la fin du fichier
