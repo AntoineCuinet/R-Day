@@ -1,0 +1,42 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(187, 170, 221, 0.6666666667);
+  font-family: Arial, Courier, monospace;
+}
+
+section {
+  text-align: center;
+}
+section .template {
+  padding: 100px 0 0 0;
+}
+section .text {
+  margin: 20px;
+}
+@media screen and (max-width: 800px) {
+  section .text {
+    display: none;
+  }
+}
+section button {
+  text-decoration: node;
+}
+section button:hover { /*pour le hover*/
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+section .template p span {
+  color: rgba(187, 170, 221, 0.6666666667);
+}
+section .template p span:hover {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

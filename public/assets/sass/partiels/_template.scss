@@ -1,0 +1,26 @@
+section {
+    text-align: center;
+
+    .template {
+        padding: 100px 0 0 0;
+        //@include transform(rotate(30deg));
+        @extend %policeSpan; //appel avec extend
+    }
+
+    .text {
+        margin: 20px;
+        @media screen and (max-width: 800px) {
+			display: none;
+		}
+    }
+
+    button {
+        text-decoration: node;
+
+        &:hover { /*pour le hover*/
+            font-size: $taille+3;
+            text-decoration: underline;
+        }
+    }
+}
+
