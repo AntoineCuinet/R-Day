@@ -1,7 +1,7 @@
 {
-    "name": "",
-    "description": "",
-    "author": "",
+    "name": "R&Day",
+    "description": "Journée R&D du CMI Informatique - 2024",
+    "author": "Tom & Antoine",
     "version": "1.0.0",
     "config": {
       "lang": "fr",

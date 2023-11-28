@@ -1,7 +1,7 @@
 {
   "name": "package.json",
-  "description": "",
-  "author": "",
+  "description": "Journée R&D du CMI Informatique - 2024",
+  "author": "Tom & Antoine",
   "version": "1.0.0",
   "main": "script.js",
   "license": "ISC",
