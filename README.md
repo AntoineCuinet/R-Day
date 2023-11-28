@@ -12,7 +12,7 @@ Description courte du projet.
 
 (*Décrivez ici les étapes d'installation du projet. Incluez des dépendances, des commandes, etc.*)
 
-Tout d'abord, assurz-vous bien d'avoir `node.js` d'installé sur votre machine (au moins v20.6.1).
+Tout d'abord, assurz-vous bien d'avoir `NodeJS` d'installé sur votre machine (au moins v20.6.1).
 
 Afin d'installer le projet, ouvrez votre terminal à la racine du projet puis entrez cela :
 
