@@ -4,7 +4,7 @@ section {
     .template {
         padding: 100px 0 0 0;
         //@include transform(rotate(30deg));
-        @extend %policeSpan; //appel avec extend
+        // @extend %policeSpan; //appel avec extend
     }
 
     .text {
@@ -18,7 +18,7 @@ section {
         text-decoration: node;
 
         &:hover { /*pour le hover*/
-            font-size: $taille+3;
+            // font-size: $taille+3;
             text-decoration: underline;
         }
     }
