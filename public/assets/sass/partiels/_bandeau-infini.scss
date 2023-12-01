@@ -1,8 +1,9 @@
 .infinit-part {
     width: 100%;
-    padding: 10px 0px;
+    padding: 8px 0px;
     position: fixed;
     background: $navbar-color;
+    border-bottom: 1px dashed $black;
 
     @media screen and (max-width: $mq) {
         display: none;
