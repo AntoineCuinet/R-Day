@@ -34,8 +34,6 @@ section button:hover { /*pour le hover*/
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
   padding: 15px 35px;
   background: rgba(255, 255, 255, 0.8745098039);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
@@ -46,22 +44,28 @@ section button:hover { /*pour le hover*/
     position: relative;
   }
 }
-#navbar .nav-icon {
+#navbar .first-container {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+#navbar .first-container .nav-icon {
   display: flex;
   align-items: center;
   text-decoration: none;
   margin-right: 20px;
 }
 @media screen and (max-width: 800px) {
-  #navbar .nav-icon {
+  #navbar .first-container .nav-icon {
     order: 2;
     margin: auto;
   }
 }
-#navbar .nav-icon img {
+#navbar .first-container .nav-icon img {
   width: 40px;
 }
-#navbar .nav-icon span {
+#navbar .first-container .nav-icon span {
   font-family: sans-serif;
   transform: translateY(3px);
   font-size: 30px;
@@ -70,20 +74,20 @@ section button:hover { /*pour le hover*/
   color: #333;
 }
 @media screen and (max-width: 800px) {
-  #navbar .nav-icon span {
+  #navbar .first-container .nav-icon span {
     font-size: 22px;
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks {
+  #navbar .first-container .main-navlinks {
     order: 1;
   }
 }
-#navbar .main-navlinks .hamburger {
+#navbar .first-container .main-navlinks .hamburger {
   display: none;
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks .hamburger {
+  #navbar .first-container .main-navlinks .hamburger {
     width: 20px;
     height: 20px;
     cursor: pointer;
@@ -95,23 +99,23 @@ section button:hover { /*pour le hover*/
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks .hamburger.open span:nth-child(1) {
+  #navbar .first-container .main-navlinks .hamburger.open span:nth-child(1) {
     transform: translate(0) rotate(135deg);
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks .hamburger.open span:nth-child(2) {
+  #navbar .first-container .main-navlinks .hamburger.open span:nth-child(2) {
     opacity: 0;
     transition: opacity 0s ease-out;
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks .hamburger.open span:nth-child(3) {
+  #navbar .first-container .main-navlinks .hamburger.open span:nth-child(3) {
     transform: translate(0) rotate(-135deg);
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .main-navlinks .hamburger span {
+  #navbar .first-container .main-navlinks .hamburger span {
     display: block;
     width: 100%;
     height: 2px;
@@ -120,26 +124,26 @@ section button:hover { /*pour le hover*/
     pointer-events: none;
     transition: opacity 0.3s 0.15s;
   }
-  #navbar .main-navlinks .hamburger span:nth-child(1) {
+  #navbar .first-container .main-navlinks .hamburger span:nth-child(1) {
     transform: translateY(7px);
   }
-  #navbar .main-navlinks .hamburger span:nth-child(3) {
+  #navbar .first-container .main-navlinks .hamburger span:nth-child(3) {
     transform: translateY(-7px);
   }
-  #navbar .main-navlinks .hamburger span:nth-child(1), #navbar .main-navlinks .hamburger span:nth-child(3) {
+  #navbar .first-container .main-navlinks .hamburger span:nth-child(1), #navbar .first-container .main-navlinks .hamburger span:nth-child(3) {
     transition: transform 0.3s ease-out;
   }
 }
-#navbar .navlinks-container {
+#navbar .first-container .navlinks-container {
   margin-left: auto;
 }
 @media screen and (max-width: 800px) {
-  #navbar .navlinks-container.open {
+  #navbar .first-container .navlinks-container.open {
     transform: translate(0%);
   }
 }
 @media screen and (max-width: 800px) {
-  #navbar .navlinks-container {
+  #navbar .first-container .navlinks-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -154,7 +158,7 @@ section button:hover { /*pour le hover*/
     max-width: 70%;
   }
 }
-#navbar .navlinks-container a {
+#navbar .first-container .navlinks-container a {
   margin: 0 10px;
   font-size: 16px;
   font-weight: 500;
@@ -165,16 +169,16 @@ section button:hover { /*pour le hover*/
   position: relative;
 }
 @media screen and (max-width: 800px) {
-  #navbar .navlinks-container a {
+  #navbar .first-container .navlinks-container a {
     font-size: 25px;
     margin: 20px 0;
   }
 }
-#navbar .navlinks-container a:nth-child(1) {
+#navbar .first-container .navlinks-container a:nth-child(1) {
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
-#navbar .navlinks-container a::after {
+#navbar .first-container .navlinks-container a::after {
   content: "";
   display: block;
   position: absolute;
@@ -186,7 +190,7 @@ section button:hover { /*pour le hover*/
   background: #333;
   transition: transform 0.3s ease-out;
 }
-#navbar .navlinks-container a:hover::after {
+#navbar .first-container .navlinks-container a:hover::after {
   transform: scaleX(1);
 }
 

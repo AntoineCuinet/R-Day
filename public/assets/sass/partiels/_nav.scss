@@ -2,8 +2,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
     padding: 15px 35px;
     background: $navbar-color;
     box-shadow: $box-shadaw;
@@ -12,158 +10,166 @@
         position: relative;
     }
 
-    //logo
-    .nav-icon {
+    //permet de mettre la max-width
+    .first-container {
+        margin: auto;
+        max-width: 1200px;
         display: flex;
         align-items: center;
-        text-decoration: none;
-        margin-right: 20px;
 
-        @media screen and (max-width: $mq) {
-			order: 2;
-            margin: auto ;
-		}
-
-        img {
-            width: $img-logo;
-        }
-        span {
-            font-family: sans-serif;
-            transform: translateY(3px);
-            font-size: $size-textlogo;
-            margin-left: 10px;
-            font-weight: $weight-logo;
-            color: $font-color-principal;
+        //logo
+        .nav-icon {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 20px;
 
             @media screen and (max-width: $mq) {
-                font-size: $size-textlogo-media;
-            }
-        }
-    }
-
-    //hamburger
-    .main-navlinks {
-        @media screen and (max-width: $mq) {
-			order: 1;
-		}
-
-        .hamburger {
-            display: none;
-
-            @media screen and (max-width: $mq) {
-                width: 20px;
-                height: 20px;
-                cursor: pointer;
-                border: none;
-                display: flex;
-                background: transparent;
-                align-items: center;
-                position: relative;
+                order: 2;
+                margin: auto ;
             }
 
-            &.open {
-                span:nth-child(1){
-                    @media screen and (max-width: $mq) {
-                        transform: translate(0) rotate($rotated);
-                    }
-                }
-                span:nth-child(2){
-                    @media screen and (max-width: $mq) {
-                        opacity: 0;
-                        transition: opacity 0s ease-out;
-                    }
-                }span:nth-child(3){
-                    @media screen and (max-width: $mq) {
-                        transform: translate(0) rotate(-$rotated);
-                    }
-                }
+            img {
+                width: $img-logo;
             }
-
             span {
+                font-family: sans-serif;
+                transform: translateY(3px);
+                font-size: $size-textlogo;
+                margin-left: 10px;
+                font-weight: $weight-logo;
+                color: $font-color-principal;
+
                 @media screen and (max-width: $mq) {
+                    font-size: $size-textlogo-media;
+                }
+            }
+        }
+
+        //hamburger
+        .main-navlinks {
+            @media screen and (max-width: $mq) {
+                order: 1;
+            }
+
+            .hamburger {
+                display: none;
+
+                @media screen and (max-width: $mq) {
+                    width: 20px;
+                    height: 20px;
+                    cursor: pointer;
+                    border: none;
+                    display: flex;
+                    background: transparent;
+                    align-items: center;
+                    position: relative;
+                }
+
+                &.open {
+                    span:nth-child(1){
+                        @media screen and (max-width: $mq) {
+                            transform: translate(0) rotate($rotated);
+                        }
+                    }
+                    span:nth-child(2){
+                        @media screen and (max-width: $mq) {
+                            opacity: 0;
+                            transition: opacity 0s ease-out;
+                        }
+                    }span:nth-child(3){
+                        @media screen and (max-width: $mq) {
+                            transform: translate(0) rotate(-$rotated);
+                        }
+                    }
+                }
+
+                span {
+                    @media screen and (max-width: $mq) {
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: $font-color-principal;
+                        position: absolute;
+                        pointer-events: none;
+                        transition: opacity 0.3s 0.15s;
+
+                        &:nth-child(1) {
+                            transform: translateY(7px);
+                        }
+                        &:nth-child(3) {
+                            transform: translateY(-7px);
+                        }
+
+                        &:nth-child(1), &:nth-child(3) {
+                            transition: transform 0.3s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        //liens
+        .navlinks-container {
+            margin-left: auto;
+            &.open {
+                @media screen and (max-width: $mq) {
+                    transform: translate(0%);
+                }
+            }
+            @media screen and (max-width: $mq) {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                background: $hamburger-color;
+                top: 100%;
+                left: 0;
+                height: 100vh;
+                padding: 50px;
+                box-shadow: $box-shadaw-right;
+                transform: translate(-100%);
+                max-width: 70%;
+            }
+
+            a {
+                margin: 0 10px;
+                font-size: $size-link;
+                font-weight: 500;
+                transform: translateY(4px);
+                text-decoration: none;
+                color: $font-color-principal;
+                display: inline-block;
+                position: relative;
+
+                @media screen and (max-width: $mq) {
+                    font-size: $size-hamburger;
+                    margin: 20px 0;
+                }
+
+                &:nth-child(1) {
+                    color: $black;
+                    font-weight: 600;
+                }
+
+                //animation au survol
+                &::after {
+                    content: "";
                     display: block;
+                    position: absolute;
+                    bottom: -3px;
                     width: 100%;
                     height: 2px;
+                    transform: scale(0);
+                    transform-origin: left;
                     background: $font-color-principal;
-                    position: absolute;
-                    pointer-events: none;
-                    transition: opacity 0.3s 0.15s;
-
-                    &:nth-child(1) {
-                        transform: translateY(7px);
-                    }
-                    &:nth-child(3) {
-                        transform: translateY(-7px);
-                    }
-
-                    &:nth-child(1), &:nth-child(3) {
-                        transition: transform 0.3s ease-out;
-                    }
+                    transition: transform 0.3s ease-out;
+                    
                 }
-            }
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }  
         }
-    }
-
-    //liens
-    .navlinks-container {
-        margin-left: auto;
-        &.open {
-            @media screen and (max-width: $mq) {
-                transform: translate(0%);
-            }
-        }
-        @media screen and (max-width: $mq) {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-            background: $hamburger-color;
-            top: 100%;
-            left: 0;
-            height: 100vh;
-            padding: 50px;
-            box-shadow: $box-shadaw-right;
-            transform: translate(-100%);
-            max-width: 70%;
-        }
-
-        a {
-            margin: 0 10px;
-            font-size: $size-link;
-            font-weight: 500;
-            transform: translateY(4px);
-            text-decoration: none;
-            color: $font-color-principal;
-            display: inline-block;
-            position: relative;
-
-            @media screen and (max-width: $mq) {
-                font-size: $size-hamburger;
-                margin: 20px 0;
-            }
-
-            &:nth-child(1) {
-                color: $black;
-                font-weight: 600;
-            }
-
-            //animation au survol
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                bottom: -3px;
-                width: 100%;
-                height: 2px;
-                transform: scale(0);
-                transform-origin: left;
-                background: $font-color-principal;
-                transition: transform 0.3s ease-out;
-                
-            }
-            &:hover::after {
-                transform: scaleX(1);
-            }
-        }  
     }
 }
