@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +11,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 body .contenu {
   flex: 1 0 auto;
@@ -19,7 +21,7 @@ section {
   text-align: center;
 }
 section .template {
-  padding: 100px 0 0 0;
+  padding: 150px 0 0 0;
 }
 section .text {
   padding: 2vw 10vw;
@@ -104,9 +106,45 @@ footer .contenu-footer .bloc ul li a:hover {
   color: rgb(0, 77, 149);
 }
 
+.infinit-part {
+  width: 100%;
+  padding: 10px 0px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9411764706);
+}
+@media screen and (max-width: 800px) {
+  .infinit-part {
+    display: none;
+  }
+}
+.infinit-part .container {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Pour cacher le texte dépassant de la largeur */
+}
+.infinit-part .container .txt {
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
+  transform: translateX(100%); /* Initial position hors de l'écran */
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.infinit-part .container .txt .it {
+  font-style: italic;
+  font-weight: bold;
+}
+
 #navbar {
   position: fixed;
-  top: 0;
+  top: 35px;
   width: 100%;
   padding: 15px 35px;
   background: rgba(255, 255, 255, 0.9411764706);
@@ -116,6 +154,7 @@ footer .contenu-footer .bloc ul li a:hover {
   #navbar {
     padding: 7px 15px;
     position: fixed;
+    top: 0px;
   }
 }
 #navbar .first-container {

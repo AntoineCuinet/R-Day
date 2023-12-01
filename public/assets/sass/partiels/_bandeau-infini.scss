@@ -1,0 +1,38 @@
+.infinit-part {
+    width: 100%;
+    padding: 10px 0px;
+    position: fixed;
+    background: $navbar-color;
+
+    @media screen and (max-width: $mq) {
+        display: none;
+    }
+
+    .container {
+        margin: auto;
+        max-width: $max-width;
+        display: flex;
+        align-items: center;
+        overflow: hidden; /* Pour cacher le texte dépassant de la largeur */
+
+        .txt {
+            white-space: nowrap;
+            animation: scroll 15s linear infinite;
+            transform: translateX(100%); /* Initial position hors de l'écran */
+    
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0%);
+                }
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+
+            .it {
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+    }
+}
