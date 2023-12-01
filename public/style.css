@@ -378,7 +378,7 @@ footer .contenu-footer .bloc ul li a:hover {
 }
 @media screen and (max-width: 800px) and (prefers-color-scheme: dark) {
   #navbar .first-container .navlinks-container {
-    background-color: #c0c0c0;
+    background-color: rgba(192, 192, 192, 0.8901960784);
   }
 }
 #navbar .first-container .navlinks-container a {
@@ -393,7 +393,6 @@ footer .contenu-footer .bloc ul li a:hover {
 }
 @media (prefers-color-scheme: dark) {
   #navbar .first-container .navlinks-container a {
-    background-color: #333;
     color: #c0c0c0;
   }
 }
@@ -410,7 +409,6 @@ footer .contenu-footer .bloc ul li a:hover {
 }
 @media screen and (max-width: 800px) and (prefers-color-scheme: dark) {
   #navbar .first-container .navlinks-container a {
-    background-color: #c0c0c0;
     color: #333;
   }
 }

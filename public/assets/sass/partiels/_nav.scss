@@ -168,7 +168,7 @@
 
                 // Styles pour le mode sombre
                 @media (prefers-color-scheme: dark) {
-                    background-color: $font-color-dark;
+                    background-color: $hamburger-color-dark;
                 }
             }
 
@@ -183,7 +183,6 @@
                 position: relative;
 
                 @media (prefers-color-scheme: dark) {
-                    background-color: $font-color-principal;
                     color: $font-color-dark;
                 }
 
@@ -192,11 +191,9 @@
                     margin: 20px 0;
 
                     @media (prefers-color-scheme: light) {
-                        //background-color: $font-color-dark;
                         color: $font-color-principal;
                     }
                     @media (prefers-color-scheme: dark) {
-                        background-color: $font-color-dark;
                         color: $font-color-principal;
                     }
                 }
