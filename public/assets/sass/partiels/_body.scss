@@ -1,4 +1,12 @@
 body {
     background-color: $bg-color;
     font-family: Arial, Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .contenu {
+        //grow shrink basis
+        flex: 1 0 auto;
+    }
 }

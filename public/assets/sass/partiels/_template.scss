@@ -8,7 +8,8 @@ section {
     }
 
     .text {
-        margin: 20px;
+        padding: 2vw 10vw;
+        text-align: justify;
         @media screen and (max-width: 800px) {
 			display: none;
 		}
@@ -16,6 +17,7 @@ section {
 
     button {
         text-decoration: node;
+        margin-bottom: 50px;
 
         &:hover { /*pour le hover*/
             // font-size: $taille+3;
