@@ -3,3 +3,13 @@
     margin: 0;
     padding: 0;
 }
+
+//séléction su text
+::selection {
+    color: $blanc-color;
+    background: $selection-color;
+}
+::-moz-selection {
+    color: $blanc-color;
+    background: $selection-color;
+}

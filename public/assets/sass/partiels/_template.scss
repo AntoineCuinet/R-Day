@@ -8,11 +8,20 @@ section {
     }
 
     .text {
-        padding: 2vw 10vw;
+        padding: 2vw 10%;
         text-align: justify;
         @media screen and (max-width: 800px) {
 			display: none;
 		}
+    }
+
+    img {
+        //empêcher séléction d'une image
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     button {

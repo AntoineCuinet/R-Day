@@ -1,10 +1,16 @@
 body {
     background-color: $bg-color;
     font-family: Arial, Courier, monospace;
+    color: $font-color-principal;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $bg-color-dark;
+        color: $font-color-dark;
+    }
 
     .contenu {
         //grow shrink basis

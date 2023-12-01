@@ -4,6 +4,11 @@ footer {
     width: 100%;
     background: $navbar-color;
     color: $font-color-principal;
+    
+    @media (prefers-color-scheme: dark) {
+        background-color: $font-color-principal;
+        color: $font-color-dark;
+    }
 
     .contenu-footer {
         max-width: $max-width;
@@ -40,6 +45,12 @@ footer {
             h3 {
                 font-size: $size-textlogo-media;
                 padding-bottom: 20px;
+                
+                //empêche la séléction du text
+                user-select: none; /* Propriété standard */
+                -moz-user-select: none; /* Firefox */
+                -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+                -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
 
                 @media screen and (max-width: $mq) {
                     padding-bottom: 5px;
@@ -59,6 +70,11 @@ footer {
                     a {
                         text-decoration : underline;
                         color: $font-color-principal;
+
+                        @media (prefers-color-scheme: dark) {
+                            background-color: $font-color-principal;
+                            color: $font-color-dark;
+                        }
 
                         &:hover {
                             color: $link-hover-color;

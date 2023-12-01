@@ -5,6 +5,12 @@
     padding: 15px 35px;
     background: $navbar-color;
     box-shadow: $box-shadaw;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $font-color-principal;
+        color: $font-color-dark;
+    }
+
     @media screen and (max-width: $mq) {
         padding: 7px 15px;
         position: fixed;
@@ -40,6 +46,11 @@
                 margin-left: 10px;
                 font-weight: $weight-logo;
                 color: $font-color-principal;
+
+                @media (prefers-color-scheme: dark) {
+                    background-color: $font-color-principal;
+                    color: $font-color-dark;
+                }
 
                 @media screen and (max-width: $mq) {
                     font-size: $size-textlogo-media;
@@ -86,6 +97,7 @@
                 }
 
                 span {
+
                     @media screen and (max-width: $mq) {
                         display: block;
                         width: 100%;
@@ -94,6 +106,20 @@
                         position: absolute;
                         pointer-events: none;
                         transition: opacity 0.3s 0.15s;
+
+
+                        // Styles par défaut
+                        @media (prefers-color-scheme: light) {
+                            // Les styles spécifiques au mode clair
+                            background-color: $font-color-principal;
+                            color: $font-color-dark;
+                        }
+
+                        // Styles pour le mode sombre
+                        @media (prefers-color-scheme: dark) {
+                            background-color: $font-color-dark;
+                            color: $font-color-dark;
+                        }
 
                         &:nth-child(1) {
                             transform: translateY(7px);
@@ -113,6 +139,7 @@
         //liens
         .navlinks-container {
             margin-left: auto;
+            
             &.open {
                 @media screen and (max-width: $mq) {
                     transform: translate(0%);
@@ -131,6 +158,18 @@
                 box-shadow: $box-shadaw-right;
                 transform: translate(-100%);
                 max-width: 70%;
+
+                // Styles par défaut
+                @media (prefers-color-scheme: light) {
+                    // Les styles spécifiques au mode clair
+                    background-color: $hamburger-color;
+                    color: $font-color-principal;
+                }
+
+                // Styles pour le mode sombre
+                @media (prefers-color-scheme: dark) {
+                    background-color: $font-color-dark;
+                }
             }
 
             a {
@@ -143,14 +182,37 @@
                 display: inline-block;
                 position: relative;
 
+                @media (prefers-color-scheme: dark) {
+                    background-color: $font-color-principal;
+                    color: $font-color-dark;
+                }
+
                 @media screen and (max-width: $mq) {
                     font-size: $size-hamburger;
                     margin: 20px 0;
+
+                    @media (prefers-color-scheme: light) {
+                        //background-color: $font-color-dark;
+                        color: $font-color-principal;
+                    }
+                    @media (prefers-color-scheme: dark) {
+                        background-color: $font-color-dark;
+                        color: $font-color-principal;
+                    }
                 }
 
                 &:nth-child(1) {
                     color: $black;
                     font-weight: 600;
+
+                    @media (prefers-color-scheme: dark) {
+                        color: $font-color-dark;
+                    }
+                    @media screen and (max-width: $mq) {
+                        @media (prefers-color-scheme: dark) {
+                            color: $font-color-principal;
+                        }
+                    }
                 }
 
                 //animation au survol
@@ -165,7 +227,6 @@
                     transform-origin: left;
                     background: $font-color-principal;
                     transition: transform 0.3s ease-out;
-                    
                 }
                 &:hover::after {
                     transform: scaleX(1);
