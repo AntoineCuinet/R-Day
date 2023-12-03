@@ -9,15 +9,16 @@
     "template"
   ],
   "scripts": {
-    "start": "concurrently \"npm run sass\" \"npm run server\"",
+    "start": "concurrently \"npm run sass\" \"npm run server\" \"npm run watch\"",
     "sass": "sass public/assets/sass/style.scss public/style.css --watch",
-    "server": "http-server -o -c-1 -a localhost -p 8080 ./public"
-  },
-  "dependencies": {
-    "sass": "^1.69.5"
+    "server": "http-server -o -c-1 -a localhost -p 8080 ./public",
+    "watch": "browser-sync start --proxy 'localhost:8080' --files 'public/**/*'"
+
   },
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "concurrently": "^8.2.2",
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "sass": "^1.69.5"
   }
 }
