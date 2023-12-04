@@ -3,7 +3,6 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    //background: url("../../pictures/bgim.png") center / cover no-repeat;
 
     img {
         background: rgb(12, 11, 193);
@@ -26,6 +25,5 @@
         @media screen and (max-width: $mq) {
             padding-top: 50px;
         }
-        
     }
 }

@@ -1,40 +1,48 @@
+.avant-block {
+    padding-top: 120px;
+    @media screen and (max-width: $mq) {
+        padding-top: 50px;
+    }
+}
+
 .template-section {
-    text-align: center;
+    width: 100%;
     @media (prefers-color-scheme: dark) {
         color: $font-color-dark;
     }
 
-    .template {
-        padding: 150px 0 0 0;
-        //@include transform(rotate(30deg));
-        // @extend %policeSpan; //appel avec extend
-    }
+    .template-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
 
-    .text {
-        padding: 2vw 10%;
-        text-align: justify;
-        @media screen and (max-width: 800px) {
-			display: none;
-		}
-    }
+        .template {
+            padding: 30px 0 0 0;
+        }
 
-    img {
-        //empêcher séléction d'une image
-        user-select: none;
-        -webkit-user-drag: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-    }
+        .text {
+            padding: 30px 10%;
+            text-align: justify;
+        }
 
-    button {
-        text-decoration: node;
-        margin-bottom: 50px;
+        img {
+            //empêcher séléction d'une image
+            user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
 
-        &:hover { /*pour le hover*/
-            // font-size: $taille+3;
-            text-decoration: underline;
+        button {
+            text-decoration: node;
+            margin-bottom: 50px;
+
+            &:hover { /*pour le hover*/
+                // font-size: $taille+3;
+                text-decoration: underline;
+            }
         }
     }
 }
-

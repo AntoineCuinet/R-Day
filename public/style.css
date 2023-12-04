@@ -34,38 +34,48 @@ body .contenu {
   flex: 1 0 auto;
 }
 
+.avant-block {
+  padding-top: 120px;
+}
+@media screen and (max-width: 800px) {
+  .avant-block {
+    padding-top: 50px;
+  }
+}
+
 .template-section {
-  text-align: center;
+  width: 100%;
 }
 @media (prefers-color-scheme: dark) {
   .template-section {
     color: #c0c0c0;
   }
 }
-.template-section .template {
-  padding: 150px 0 0 0;
+.template-section .template-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
-.template-section .text {
-  padding: 2vw 10%;
+.template-section .template-container .template {
+  padding: 30px 0 0 0;
+}
+.template-section .template-container .text {
+  padding: 30px 10%;
   text-align: justify;
 }
-@media screen and (max-width: 800px) {
-  .template-section .text {
-    display: none;
-  }
-}
-.template-section img {
+.template-section .template-container img {
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.template-section button {
+.template-section .template-container button {
   text-decoration: node;
   margin-bottom: 50px;
 }
-.template-section button:hover { /*pour le hover*/
+.template-section .template-container button:hover { /*pour le hover*/
   text-decoration: underline;
 }
 
