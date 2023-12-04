@@ -1,0 +1,42 @@
+.quatre-cent-quatre {
+    padding-top: 50px;
+
+    h1 {
+        font-size: $size-404;
+        
+        
+        //empêche la séléction du text
+        user-select: none; /* Propriété standard */
+        -moz-user-select: none; /* Firefox */
+        -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+        -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+
+        @media screen and (max-width: $mq) {
+            padding-top: 25px;
+            font-size: $size-404-phone;
+        }
+    }
+
+    p {
+        font-size: $size-hamburger;
+        @media screen and (max-width: $mq) {
+            font-size: $size-textlogo-media;
+        }
+    }
+
+    a {
+        text-decoration : underline;
+        color: $font-color-principal;
+        font-size: $size-textlogo-media;
+        font-weight: 700;
+        transition: color 0.3s ease-out;
+
+        @media (prefers-color-scheme: dark) {
+            color: $font-color-dark;
+        }
+
+        &:hover {
+            color: $black;
+        }
+    }
+}

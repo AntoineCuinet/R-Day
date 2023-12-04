@@ -8,6 +8,7 @@ footer {
     @media (prefers-color-scheme: dark) {
         background-color: $font-color-principal;
         color: $font-color-dark;
+        border-top: 1px dashed $blanc-color;
     }
 
     .contenu-footer {
