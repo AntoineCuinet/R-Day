@@ -1,5 +1,8 @@
-section {
+.template-section {
     text-align: center;
+    @media (prefers-color-scheme: dark) {
+        color: $font-color-dark;
+    }
 
     .template {
         padding: 150px 0 0 0;

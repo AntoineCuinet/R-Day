@@ -1,0 +1,31 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    //background: url("../../pictures/bgim.png") center / cover no-repeat;
+
+    img {
+        background: rgb(12, 11, 193);
+        position: relative;
+        z-index: -1;
+        padding-top: 100px;
+        width: 100%;
+        height: auto;
+        //empêcher séléction d'une image
+        user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+
+        @media (prefers-color-scheme: dark) {
+            filter: brightness(50%);
+        }
+        
+        @media screen and (max-width: $mq) {
+            padding-top: 50px;
+        }
+        
+    }
+}

@@ -3,18 +3,20 @@
     top: 35px; //for infinite nav
     width: 100%;
     padding: 15px 35px;
-    background: $navbar-color;
+    //background: $navbar-color;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: $box-shadaw;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $font-color-principal;
+        //background-color: $font-color-principal;
         color: $font-color-dark;
     }
 
     @media screen and (max-width: $mq) {
         padding: 7px 15px;
         position: fixed;
-        top: 0px;
+        top: 0;
     }
 
     //permet de mettre la max-width
@@ -45,12 +47,7 @@
                 font-size: $size-textlogo;
                 margin-left: 10px;
                 font-weight: $weight-logo;
-                color: $font-color-principal;
-
-                @media (prefers-color-scheme: dark) {
-                    background-color: $font-color-principal;
-                    color: $font-color-dark;
-                }
+                color: $font-color-dark;
 
                 @media screen and (max-width: $mq) {
                     font-size: $size-textlogo-media;
@@ -102,24 +99,12 @@
                         display: block;
                         width: 100%;
                         height: 2px;
-                        background: $font-color-principal;
                         position: absolute;
                         pointer-events: none;
                         transition: opacity 0.3s 0.15s;
-
-
-                        // Styles par défaut
-                        @media (prefers-color-scheme: light) {
-                            // Les styles spécifiques au mode clair
-                            background-color: $font-color-principal;
-                            color: $font-color-dark;
-                        }
-
-                        // Styles pour le mode sombre
-                        @media (prefers-color-scheme: dark) {
-                            background-color: $font-color-dark;
-                            color: $font-color-dark;
-                        }
+                        background-color: $font-color-dark;
+                        color: $font-color-dark;
+                        
 
                         &:nth-child(1) {
                             transform: translateY(7px);
@@ -151,6 +136,8 @@
                 align-items: flex-start;
                 position: absolute;
                 background: $hamburger-color;
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
                 top: 100%;
                 left: 0;
                 height: 100vh;
@@ -163,12 +150,16 @@
                 @media (prefers-color-scheme: light) {
                     // Les styles spécifiques au mode clair
                     background-color: $hamburger-color;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
                     color: $font-color-principal;
                 }
 
                 // Styles pour le mode sombre
                 @media (prefers-color-scheme: dark) {
                     background-color: $hamburger-color-dark;
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
                 }
             }
 
@@ -178,13 +169,9 @@
                 font-weight: 500;
                 transform: translateY(4px);
                 text-decoration: none;
-                color: $font-color-principal;
+                color:  $font-color-dark;
                 display: inline-block;
                 position: relative;
-
-                @media (prefers-color-scheme: dark) {
-                    color: $font-color-dark;
-                }
 
                 @media screen and (max-width: $mq) {
                     font-size: $size-hamburger;
@@ -199,16 +186,14 @@
                 }
 
                 &:nth-child(1) {
-                    color: $black;
+                    color: $blanc-color;
                     font-weight: 600;
 
                     @media (prefers-color-scheme: dark) {
                         color: $font-color-dark;
                     }
                     @media screen and (max-width: $mq) {
-                        @media (prefers-color-scheme: dark) {
-                            color: $font-color-principal;
-                        }
+                        color: $font-color-principal;
                     }
                 }
 
@@ -222,8 +207,12 @@
                     height: 2px;
                     transform: scale(0);
                     transform-origin: left;
-                    background: $font-color-principal;
+                    background:$font-color-dark;
                     transition: transform 0.3s ease-out;
+
+                    @media screen and (max-width: $mq) {
+                        background: $bg-color-dark;
+                    }
                 }
                 &:hover::after {
                     transform: scaleX(1);

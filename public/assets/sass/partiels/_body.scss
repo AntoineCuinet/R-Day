@@ -8,8 +8,8 @@ body {
     overflow-x: hidden;
 
     @media (prefers-color-scheme: dark) {
-        background-color: $bg-color-dark;
-        color: $font-color-dark;
+        background-color: rgb(26, 56, 123);
+        color: $font-color-principal;
     }
 
     .contenu {

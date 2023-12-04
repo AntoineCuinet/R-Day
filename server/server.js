@@ -5,8 +5,8 @@ const path = require('path');
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
 
-    if (filePath === './') {
-        filePath = './public/index.html';
+    if (filePath === '../') {
+        filePath = '../public/index.html';
     }
 
     const contentType = getContentType(filePath);
@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}/`);
