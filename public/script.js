@@ -24,3 +24,18 @@ new ResizeObserver(entries => { //gérer la transition du menu hamburger
         navLinksContainer.style.transition = "none";
     }
 }).observe(document.body);
+
+
+//!bouton du sroll vers le haut du site
+const toTopBtn = document.querySelector(".to-top-btn");
+window.addEventListener("scroll", () => {
+    if(document.documentElement.scrollTop > window.innerHeight * 0.7)
+        toTopBtn.classList.add("active");
+    else 
+        toTopBtn.classList.remove("active");
+});
+toTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0
+    })
+});
