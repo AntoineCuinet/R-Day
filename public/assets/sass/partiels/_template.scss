@@ -21,10 +21,35 @@
             padding: 30px 0 0 0;
         }
 
-        .text {
+        p {
             padding: 30px 10%;
             text-align: justify;
+
+            a {
+                text-decoration : underline;
+                color: $font-color-principal;
+
+                
+                @media (prefers-color-scheme: dark) {
+                    color: $font-color-dark;
+                }
+
+                &:hover {
+                    color: $link-hover-color;
+                }
+            }
         }
+
+        h3,
+        h4 {
+            text-align: left;
+            padding: 0 0 0 15px;
+            font-weight: bold;
+        }
+        h4 {
+            padding: 0 0 0 30px;
+        }
+
 
         img {
             //empêcher séléction d'une image

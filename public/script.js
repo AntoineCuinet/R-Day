@@ -44,9 +44,10 @@ function getChrono() {
     const seconds = Math.floor((distanceBase % (1000 * 60)) / 1000);
 
     text.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
-    textHome.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+    if (window.location.href.endsWith("/index.html")) {
+        textHome.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+    }
 }
-
 getChrono();
 const countDownInterval = setInterval(() => {
     getChrono();
