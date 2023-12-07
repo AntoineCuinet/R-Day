@@ -27,6 +27,52 @@
         }
     }
 
+    .home-timer {
+        position: absolute;
+        top: 35%;
+        width: auto;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: $box-shadaw;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: $blanc-color;
+
+
+        @media screen and (max-width: $mq) {
+            display: none;
+        }
+        @media screen and (max-width: 1300px) and (min-height: 1000px) {
+            display: none;
+        }
+
+        h2 {
+            font-family: Montserrat, sans-serif;
+            padding: 5px 25px;
+            margin: 5px 0;
+            font-size: clamp(50px, 25vw, 50px);
+            font-weight: bold;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(160deg, rgb(4, 7, 80) 0%, rgb(17, 46, 103) 50%, rgb(27, 63, 135) 100%);
+            color: transparent;
+
+            //empêche la séléction du text
+            user-select: none; /* Propriété standard */
+            -moz-user-select: none; /* Firefox */
+            -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+            -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+
+            @media (prefers-color-scheme: dark) {
+                background-image: linear-gradient(160deg, rgb(21, 49, 188) 0%, rgba(70,127,244,1) 50%, rgb(154, 196, 212)100%);
+            }
+        }
+    }
+
     #scrool-bottom {
         position: absolute;
         bottom: 17%;

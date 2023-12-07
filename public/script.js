@@ -29,6 +29,7 @@ new ResizeObserver(entries => { //gérer la transition du menu hamburger
 
 //chronomètre
 const text = document.querySelector(".text-chronometre");
+const textHome = document.querySelector(".text-chronometre-home");
 const closeWindow = document.querySelector(".corner-round");
 const chronometre = document.querySelector(".chronometre");
 
@@ -43,6 +44,7 @@ function getChrono() {
     const seconds = Math.floor((distanceBase % (1000 * 60)) / 1000);
 
     text.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
+    textHome.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
 }
 
 getChrono();
@@ -50,9 +52,21 @@ const countDownInterval = setInterval(() => {
     getChrono();
 }, 1000);
 
+// Vérifier si la fenêtre doit être fermée
+const isWindowClosed = localStorage.getItem("isWindowClosed");
+if (isWindowClosed === "true") {
+    chronometre.style.opacity = "0";
+    closeWindow.style.cursor = "default";
+}
+
+
 closeWindow.addEventListener("click", function() {
-    chronometre.style.display = "none";
-    closeWindow.style.display = "none";
+    chronometre.style.transition = "opacity .6s ease-out";
+    chronometre.style.opacity = "0";
+    closeWindow.style.cursor = "default";
+
+    // Enregistrer l'état de la fenêtre comme fermée dans le localStorage
+    localStorage.setItem("isWindowClosed", "true");
 });
 
 
@@ -66,7 +80,9 @@ window.addEventListener("scroll", () => {
         toTopBtn.classList.remove("active");
 });
 toTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0
-    })
+    if (toTopBtn.classList.contains("active")) {
+        window.scrollTo({
+            top: 0
+        });
+    }
 });
