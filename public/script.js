@@ -29,6 +29,8 @@ new ResizeObserver(entries => { //gérer la transition du menu hamburger
 
 //chronomètre
 const text = document.querySelector(".text-chronometre");
+const closeWindow = document.querySelector(".corner-round");
+const chronometre = document.querySelector(".chronometre");
 
 function getChrono() {
     const now = new Date().getTime();
@@ -40,13 +42,18 @@ function getChrono() {
     const minutes = Math.floor((distanceBase % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distanceBase % (1000 * 60)) / 1000);
 
-    text.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    text.innerText = `${days}j ${hours}h ${minutes}m ${seconds}s`;
 }
 
 getChrono();
 const countDownInterval = setInterval(() => {
     getChrono();
 }, 1000);
+
+closeWindow.addEventListener("click", function() {
+    chronometre.style.display = "none";
+    closeWindow.style.display = "none";
+});
 
 
 
