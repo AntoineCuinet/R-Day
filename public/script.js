@@ -26,7 +26,31 @@ new ResizeObserver(entries => { //gérer la transition du menu hamburger
 }).observe(document.body);
 
 
-//!bouton du sroll vers le haut du site
+
+//chronomètre
+const text = document.querySelector(".text-chronometre");
+
+function getChrono() {
+    const now = new Date().getTime();
+    const countdownDate = new Date("March 13, 2024").getTime();
+    const distanceBase = countdownDate - now;
+
+    const days = Math.floor(distanceBase / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distanceBase % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distanceBase % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distanceBase % (1000 * 60)) / 1000);
+
+    text.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+}
+
+getChrono();
+const countDownInterval = setInterval(() => {
+    getChrono();
+}, 1000);
+
+
+
+//bouton du sroll vers le haut du site
 const toTopBtn = document.querySelector(".to-top-btn");
 window.addEventListener("scroll", () => {
     if(document.documentElement.scrollTop > window.innerHeight * 0.7)

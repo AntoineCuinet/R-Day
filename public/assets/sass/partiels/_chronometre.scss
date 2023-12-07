@@ -1,0 +1,27 @@
+.chronometre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.166);
+    box-shadow: $box-shadaw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    h4 {
+        padding: 5px;
+
+        @media screen and (min-width: $mq) {
+            padding: 10px;
+            font-size: large;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            color: $font-color-dark;
+        }
+    }
+}

@@ -367,8 +367,8 @@ footer .contenu-footer .bloc ul li a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.085);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.166);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -386,6 +386,35 @@ footer .contenu-footer .bloc ul li a:hover {
 }
 .to-top-btn.active {
   opacity: 1;
+}
+
+.chronometre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.166);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.chronometre h4 {
+  padding: 5px;
+}
+@media screen and (min-width: 800px) {
+  .chronometre h4 {
+    padding: 10px;
+    font-size: large;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .chronometre h4 {
+    color: #c0c0c0;
+  }
 }
 
 #navbar {
