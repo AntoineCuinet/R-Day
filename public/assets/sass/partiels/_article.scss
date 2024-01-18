@@ -1,0 +1,30 @@
+.article-container-intervenant {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: $box-shadaw;
+    backdrop-filter: brightness(80%);
+    
+    h3 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    p {
+        text-align: justify;
+    }
+
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+        float: left;
+        shape-outside: margin-box;
+        margin: 0 20px 5px 0;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

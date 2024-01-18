@@ -42,7 +42,7 @@
                 <!-- différents liens dns la navigation -->
                 <div class="navlinks-container">
                     <a href="../../index.php" aria-current="page" >Accueil</a>
-                    <a href="./lieu.php">Lieu</a>
+                    <a href="./lieu.php">Informations</a>
                     <a href="./intervenant.php">Intervenant</a>
                 </div>
             </div>

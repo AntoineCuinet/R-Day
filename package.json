@@ -9,16 +9,18 @@
     "R&D R&Day Informatique Réalité-virtuelle"
   ],
   "scripts": {
-    "start": "npm run sass",
+    "start": "concurrently \"npm run sass\" \"php -S 0.0.0.0:8080\"",
     "sass": "sass public/assets/sass/style.scss public/style.css --watch",
     "server": "http-server -o -c-1 -a localhost -p 3000 ./public --proxy404 /assets/pages/404.html",
     "watch-browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*' --reload-delay 1000",
-    "server-watch": "npm run server & npm run watch-browser-sync"
+    "server-watch": "npm run server & npm run watch-browser-sync",
+    "build": "npm run start"
   },
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "concurrently": "^8.2.2",
     "http-server": "^14.1.1",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "vercel-php": "^0.6.0"
   }
 }

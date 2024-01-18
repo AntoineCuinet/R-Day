@@ -1,0 +1,13 @@
+.google {
+    display: flex;
+    justify-content: center;
+
+    .google-map {
+        display: block;
+        width: 100%;
+        border: 3px solid $font-color-dark;
+        border-radius: 10px;
+        box-shadow: $box-shadaw;
+    
+    }
+}

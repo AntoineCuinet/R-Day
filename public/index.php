@@ -44,7 +44,7 @@
                 <!-- différents liens dns la navigation -->
                 <div class="navlinks-container">
                     <a href="./index.php" aria-current="page" >Accueil</a>
-                    <a href="./assets/pages/lieu.php">Lieu</a>
+                    <a href="./assets/pages/lieu.php">Informations</a>
                     <a href="./assets/pages/intervenant.php">Intervenant</a>
                 </div>
             </div>
@@ -54,13 +54,13 @@
     <!-- on met ici tout le contenu du site (dans des sections) -->
     <div class="contenu">
         <section class="main-section">
-            <img src="./assets/pictures/bgim.png" alt="bg">
+            <img loading="lazy" src="./assets/pictures/bgim.png" alt="bg">
             <div class="home-timer">
                 <h2>Votre journée dans</h2>
                 <h2 class="text-chronometre-home"></h2>
             </div>
             <div id="scrool-bottom">
-                <a href="#scrool-bottom"><img src="./assets/pictures/arrow-down-circle-outline.svg" alt=""></a>
+                <a href="#scrool-bottom"><img loading="lazy" src="./assets/pictures/arrow-down-circle-outline.svg" alt=""></a>
             </div>
         </section>
         <section class="template-section">
@@ -92,6 +92,7 @@
     </div>
 
 
+    <br><br><br><br>
     <footer>
         <div class="contenu-footer">
             <div class="bloc footer-info">

@@ -67,7 +67,7 @@ window.addEventListener("load", function () {
         text.textContent = `${days}j ${hours}h ${minutes}m ${seconds}s`;
 
         // Vérification de l'URL pour afficher le texte sur la page d'accueil
-        if (window.location.href.endsWith("/index.php")) {
+        if (textHome) {
             textHome.textContent = `${days}j ${hours}h ${minutes}m ${seconds}s`;
         }
     };
@@ -83,6 +83,7 @@ window.addEventListener("load", function () {
     if (isWindowClosed === "true") {
         // Utilisation de const pour les propriétés non modifiées
         chronometre.style.opacity = "0";
+        chronometre.style.display = "none";
         closeWindow.style.cursor = "default";
     }
 
@@ -90,6 +91,10 @@ window.addEventListener("load", function () {
         chronometre.style.transition = "opacity .6s ease-out";
         chronometre.style.opacity = "0";
         closeWindow.style.cursor = "default";
+
+        this.setTimeout(() => {
+            chronometre.style.display = "none";
+        }, 600);
 
         // Enregistrement de l'état de la fenêtre comme fermée dans le localStorage
         localStorage.setItem("isWindowClosed", "true");

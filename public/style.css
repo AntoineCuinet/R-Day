@@ -18,6 +18,7 @@
 body {
   background-color: #306ff6;
   font-family: Arial, Courier, monospace;
+  line-height: 1.5;
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -64,20 +65,20 @@ html {
 .template-section .template-container .template {
   padding: 30px 0 0 0;
 }
-.template-section .template-container p {
-  padding: 30px 10%;
+.template-section .template-container .text {
+  padding: 20px 10%;
   text-align: justify;
 }
-.template-section .template-container p a {
+.template-section .template-container .text a {
   text-decoration: underline;
   color: #333;
 }
 @media (prefers-color-scheme: dark) {
-  .template-section .template-container p a {
+  .template-section .template-container .text a {
     color: #c0c0c0;
   }
 }
-.template-section .template-container p a:hover {
+.template-section .template-container .text a:hover {
   color: rgb(0, 77, 149);
 }
 .template-section .template-container h3,
@@ -102,6 +103,13 @@ html {
 }
 .template-section .template-container button:hover { /*pour le hover*/
   text-decoration: underline;
+}
+.template-section .template-container ul {
+  text-align: left;
+  margin-left: 15%;
+}
+.template-section .template-container ul li {
+  padding-bottom: 10px;
 }
 
 footer {
@@ -498,6 +506,46 @@ footer .contenu-footer .bloc ul li a:hover {
   .chronometre h4 {
     color: #c0c0c0;
   }
+}
+
+.google {
+  display: flex;
+  justify-content: center;
+}
+.google .google-map {
+  display: block;
+  width: 100%;
+  border: 3px solid #c0c0c0;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+}
+
+.article-container-intervenant {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+  backdrop-filter: brightness(80%);
+}
+.article-container-intervenant h3 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.article-container-intervenant p {
+  text-align: justify;
+}
+.article-container-intervenant img {
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  shape-outside: margin-box;
+  margin: 0 20px 5px 0;
+}
+.article-container-intervenant::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #navbar {

@@ -21,8 +21,8 @@
             padding: 30px 0 0 0;
         }
 
-        p {
-            padding: 30px 10%;
+        .text {
+            padding: 20px 10%;
             text-align: justify;
 
             a {
@@ -67,6 +67,15 @@
             &:hover { /*pour le hover*/
                 // font-size: $taille+3;
                 text-decoration: underline;
+            }
+        }
+
+        ul {
+            text-align: left;
+            margin-left: 15%;
+          
+            li {
+                padding-bottom: 10px;
             }
         }
     }
