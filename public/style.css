@@ -463,6 +463,7 @@ footer .contenu-footer .bloc ul li a:hover {
 
 .chronometre {
   display: flex;
+  z-index: 3;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -548,10 +549,56 @@ footer .contenu-footer .bloc ul li a:hover {
   clear: both;
 }
 
+.logos {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  white-space: nowrap;
+  background: #c0c0c0;
+}
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, transparent, #c0c0c0);
+}
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, #c0c0c0);
+}
+.logos::before, .logos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 1;
+}
+.logos .logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.logos .logos-slide img {
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+  margin: 0 20px;
+  padding: 10px;
+}
+
 #navbar {
   position: fixed;
   z-index: 1;
-  top: 35px;
+  top: 40px;
   width: 100%;
   padding: 25px 35px;
   transition: 0.6s;

@@ -1,0 +1,53 @@
+.logos {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    background: $font-color-dark;
+
+    &:hover .logos-slide {
+        animation-play-state: paused;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to left, transparent, $font-color-dark);
+    }
+    &::after {
+        right: 0;
+        background: linear-gradient(to right, transparent, $font-color-dark);
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 150px;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .logos-slide {
+        display: inline-block;
+        animation: 35s slide infinite linear;
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        img {
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: $box-shadaw;
+            margin: 0 20px;
+            padding: 10px;
+        }
+    }
+}
+

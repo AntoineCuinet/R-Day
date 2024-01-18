@@ -66,16 +66,39 @@
         <section class="template-section">
             <div class="template-container">
                 <h1 class="template">R&Day</h1>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique vitae amet culpa exercitationem a molestias ipsam impedit facere optio ad.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique vitae amet culpa exercitationem a molestias ipsam impedit facere optio ad.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique vitae amet culpa exercitationem a molestias ipsam impedit facere optio ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui enim saepe perferendis repellat quo fugiat impedit aspernatur quas. Ducimus voluptas aperiam omnis reiciendis consequatur quod sapiente, exercitationem atque nihil incidunt odio a consectetur iure suscipit nisi vitae eum voluptatum, repellat veritatis eos fuga! Aliquam sint nulla corrupti recusandae vel autem doloremque vero? Repellendus id iusto, esse exercitationem doloribus cum architecto corrupti, at explicabo voluptatum earum tempore ea itaque corporis magnam, molestias porro. Tenetur nemo fugit ipsa aspernatur quia cum assumenda consectetur explicabo magni tempora error impedit voluptatum suscipit, quasi omnis, quas ducimus dolores asperiores. Magni sed molestiae corrupti tenetur dicta?</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique vitae amet culpa exercitationem a molestias ipsam impedit facere optio ad.</p>
                 <br>
-                <img src="./assets/pictures/image_template.jpeg" alt="image template" width=30% height=30%>
-                <br>
-                <button>template</button>
+                <p class="text">qu'est-ce que la D&Day</p>
+                <p class="text">qui somme nous + notre parcours + CMI...</p>
+                <p class="text">pourquoi on organise ca + le but + la finalité </p>
+                <p class="text">quel est notre sujet + pourquoi on l'a choisi</p>
+                <p class="text">liens vers infos et intervenant</p>
+                <p class="text">dire qu'on attend beaucoup de monde + qu'on a hate...</p>
+                <p class="text">afficher les sponsorts </p>
             </div>
         </section>
+        <br><br><br><br><br>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+            </div>
+            <div class="logos-slide">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+            </div>
+        </div>
     </div>
 
     <!-- chronomètre -->
