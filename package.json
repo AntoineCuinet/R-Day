@@ -9,7 +9,7 @@
     "R&D R&Day Informatique Réalité-virtuelle"
   ],
   "scripts": {
-    "start": "concurrently \"npm run sass\" \"php -S 0.0.0.0:8080\"",
+    "start": "concurrently \"npm run sass\" \"vercel-php -S 0.0.0.0:8080\"",
     "sass": "sass public/assets/sass/style.scss public/style.css --watch",
     "server": "http-server -o -c-1 -a localhost -p 3000 ./public --proxy404 /assets/pages/404.html",
     "watch-browser-sync": "browser-sync start --proxy 'localhost:3000' --files 'public/**/*' --reload-delay 1000",
