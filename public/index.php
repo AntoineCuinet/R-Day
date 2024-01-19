@@ -73,7 +73,6 @@
                 <p class="text">quel est notre sujet + pourquoi on l'a choisi</p>
                 <p class="text">liens vers infos et intervenant</p>
                 <p class="text">dire qu'on attend beaucoup de monde + qu'on a hate...</p>
-                <p class="text">afficher les sponsorts </p>
             </div>
         </section>
 
@@ -81,7 +80,7 @@
         <br><br><br><br><br>
         <div class="logos">
             <div class="logo-slide-container">
-                <h3 class="logo-h3">Nos sponsorts</h3>
+                <h3 class="logo-h3">Nos sponsors</h3>
                 <div class="logos-slide">
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>

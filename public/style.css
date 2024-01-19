@@ -617,7 +617,9 @@ footer .contenu-footer .bloc ul li a:hover {
 }
 .logos .logo-slide-container .logo-h3 {
   font-size: 22px;
-  margin: 10px 0 30px 15%;
+  margin: 10px 0 30px 30px;
+  position: relative;
+  z-index: 2;
   user-select: none; /* Propriété standard */
   -moz-user-select: none; /* Firefox */
   -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
@@ -642,11 +644,16 @@ footer .contenu-footer .bloc ul li a:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
   margin: 0 20px;
   padding: 10px;
+  transition: 0.3s ease-out;
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+.logos .logo-slide-container .logos-slide img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 #navbar {
