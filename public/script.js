@@ -18,6 +18,19 @@ window.addEventListener("load", function () {
     }
     hamburgerToggler.addEventListener("click", toggleNav);
 
+
+    // Ajoutez un gestionnaire d'événements pour le clic n'importe où sur le document
+    document.addEventListener("click", function (event) {
+        // Vérifiez si le clic a eu lieu à l'extérieur du menu
+        if (!navLinksContainer.contains(event.target) && !hamburgerToggler.contains(event.target)) {
+            // Si c'est le cas, fermez le menu en retirant la classe "open"
+            navLinksContainer.classList.remove("open");
+            hamburgerToggler.classList.remove("open");
+        }
+    });
+
+
+
     new ResizeObserver(entries => { //gérer la transition du menu hamburger
         if(entries[0].contentRect.width <= 800){
             navLinksContainer.style.transition = "transform 0.3s ease-out";
