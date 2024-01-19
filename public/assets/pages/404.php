@@ -10,7 +10,7 @@ $description_page = "Page 404";
     <div class="template-container quatre-cent-quatre">
         <h1><?= $title_page; ?> not found 🔦</h1>
         <br>
-        <p>Il n'y a rien à voir ici... </p>
+        <p class="text">Il n'y a rien à voir ici... </p>
         <br>
         <a href="../../index.php">Retour à l'accueil</a>
     </div>

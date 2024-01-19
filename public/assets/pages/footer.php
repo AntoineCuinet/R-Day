@@ -11,7 +11,7 @@
 
     <!-- btn pour remonter en haut du site -->
     <div class="to-top-btn">
-        <img src="../pictures/arrow-down-circle-outline.svg" alt="">
+        <img src="../pictures/arrow-down-circle-outline.svg" alt="" width="50px" height="50px">
     </div>
 
 

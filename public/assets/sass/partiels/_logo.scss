@@ -1,52 +1,100 @@
 .logos {
-    position: relative;
+    border-top: 1px dashed $black;
     overflow: hidden;
-    padding: 10px;
     white-space: nowrap;
-    background: $font-color-dark;
+    background: $navbar-color;
+    color: $font-color-principal;
+    width: 100vw;
 
-    &:hover .logos-slide {
+    @media (prefers-color-scheme: dark) {
+        background-color: $font-color-principal;
+        color: $font-color-dark;
+        border-top: 1px dashed $blanc-color;
+    }
+    
+    &:hover .logo-slide-container .logos-slide {
         animation-play-state: paused;
     }
 
-    &::before {
-        left: 0;
-        background: linear-gradient(to left, transparent, $font-color-dark);
-    }
-    &::after {
-        right: 0;
-        background: linear-gradient(to right, transparent, $font-color-dark);
-    }
-
-    &::before,
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        width: 150px;
+    
+    .logo-slide-container {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto;
         height: 100%;
-        z-index: 1;
-    }
+        padding: 10px 10px 30px 10px;    
+        overflow: hidden;
 
-    .logos-slide {
-        display: inline-block;
-        animation: 35s slide infinite linear;
-
-        @keyframes slide {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-100%);
+        
+    
+        &::before {
+            left: 0;
+            background: linear-gradient(to left, transparent, $navbar-color);
+    
+            @media (prefers-color-scheme: dark) {
+                background: linear-gradient(to left, transparent, $font-color-principal);
             }
         }
+        &::after {
+            right: 0;
+            background: linear-gradient(to right, transparent, $navbar-color);
+    
+            @media (prefers-color-scheme: dark) {
+                background: linear-gradient(to right, transparent, $font-color-principal);
+            }
+        }
+    
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 150px;
+            height: 100%;
+            z-index: 1;
+        }
 
-        img {
-            height: 100px;
-            border-radius: 10px;
-            box-shadow: $box-shadaw;
-            margin: 0 20px;
-            padding: 10px;
+        .logo-h3 {
+            font-size: $size-textlogo-media;
+            margin: 10px 0 30px 15%;
+            // text-transform: uppercase;
+            // text-decoration: underline;
+    
+            //empêche la séléction du text
+            user-select: none; /* Propriété standard */
+            -moz-user-select: none; /* Firefox */
+            -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+            -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+        }
+    
+        .logos-slide {
+            display: inline-block;
+            animation: 35s slide infinite linear;
+    
+            @keyframes slide {
+                from {
+                    transform: translateX(0);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+    
+            img {
+                backdrop-filter: brightness(95%);
+                height: 100px;
+                border-radius: 10px;
+                box-shadow: $box-shadaw;
+                margin: 0 20px;
+                padding: 10px;
+
+                //empêcher séléction d'une image
+                user-select: none;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
         }
     }
 }

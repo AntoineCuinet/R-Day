@@ -76,27 +76,28 @@
                 <p class="text">afficher les sponsorts </p>
             </div>
         </section>
+
+
         <br><br><br><br><br>
         <div class="logos">
-            <div class="logos-slide">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-            </div>
-            <div class="logos-slide">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
-                <img src="./assets/logo/logo_ufr.png" alt="logo association OFNI">
+            <div class="logo-slide-container">
+                <h3 class="logo-h3">Nos sponsorts</h3>
+                <div class="logos-slide">
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                </div>
+                <div class="logos-slide">
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -111,11 +112,8 @@
 
     <!-- btn pour remonter en haut du site -->
     <div class="to-top-btn">
-        <img src="./assets/pictures/arrow-down-circle-outline.svg" alt="">
+        <img src="./assets/pictures/arrow-down-circle-outline.svg" alt="" width="50px" height="50px">
     </div>
-
-
-    <br><br><br><br>
     <footer>
         <div class="contenu-footer">
             <div class="bloc footer-info">
