@@ -25,7 +25,7 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <p class="text">Raison sociale : association</p>
         <p class="text">Forme juridique : association</p>
         <p class="text">Adresse : 38 rue Charles Nodier 25000 Besançon</p>
-        <p class="text">Téléphone : <a href="tel:+33614226205">+33 6 14 22 62 05</a></p>
+        <p class="text">Téléphone : <a href="tel:#31#+33614226205">+33 6 14 22 62 05</a></p>
         <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a></p>
         <br>
         <br>
@@ -34,7 +34,7 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <h3>Hébergeur</h3>
         <p class="text">Nom : <a href="https://ofni.asso.fr/" target="_blank">ofni.asso.fr</a></p>
         <p class="text">Adresse : 38 rue Charles Nodier 25000 Besançon</p>
-        <p class="text">Téléphone : <a href="tel:+33614226205">+33 6 14 22 62 05</a></p>
+        <p class="text">Téléphone : <a href="tel:#31#+33614226205">+33 6 14 22 62 05</a></p>
         <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a></p>
         <br>
         <br>

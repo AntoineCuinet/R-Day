@@ -80,22 +80,28 @@
         <br><br><br><br><br>
         <div class="logos">
             <div class="logo-slide-container">
-                <h3 class="logo-h3">Nos sponsors</h3>
+                <h3 class="logo-h3">Nos partenaires</h3>
                 <div class="logos-slide">
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                 </div>
                 <div class="logos-slide">
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                     <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté"></a>
                     <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria"></a>
                 </div>
             </div>
         </div>
