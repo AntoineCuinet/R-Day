@@ -6,11 +6,6 @@
     box-shadow: $box-shadaw;
     backdrop-filter: brightness(80%);
 
-    @media screen and (max-width: $mq) {
-        -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
-        filter: grayscale(0%); /* Firefox */
-    }
-
     &:hover img {
         -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
         filter: grayscale(0%); /* Firefox */
@@ -34,6 +29,11 @@
         -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
         filter: grayscale(100%); /* Firefox */
         box-shadow: $box-shadaw;
+
+        @media screen and (max-width: $mq) {
+            -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+            filter: grayscale(0%); /* Firefox */
+        }
 
         //empêcher séléction d'une image
         user-select: none;
