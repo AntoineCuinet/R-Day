@@ -18,6 +18,7 @@ $description_page = "Page de l'intervenant de la journée";
         </article>
 
         <p class="text">Sur quoi porte la conférence + le thème, l'heure, la durée, le puclic cible...</p>
+        <p class="text">Pour plus d'information sur le déroulement de la journée, <a href="./lieu.php">voir la page d'informations</a>.</p>
     </div>
 </section>
    

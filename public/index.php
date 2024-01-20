@@ -88,8 +88,9 @@
                 <p class="text">qui somme nous + notre parcours + CMI...</p>
                 <p class="text">pourquoi on organise ca + le but + la finalité </p>
                 <p class="text">quel est notre sujet + pourquoi on l'a choisi</p>
-                <p class="text">liens vers infos et intervenant</p>
                 <p class="text">dire qu'on attend beaucoup de monde + qu'on a hate...</p>
+
+                <p class="text">Pour plus d'information sur le déroulement de la journée, <a href="./assets/pages/lieu.php">voir la page d'informations</a>, et pour sur la conférence, <a href="./assets/pages/intervenant.php">voir la page sur l'intervenant de la journée</a>.</p>
             </div>
         </section>
 

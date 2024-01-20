@@ -21,7 +21,7 @@ $description_page = "Page d'information sur le lieu de la journée";
         <h3>Horaires de la journée :</h3>
         <br>
         <p class="text">Votre journée commence le <strong>mercredi 13 mars</strong> 2024 à 14h et se termine le même jour à 18h.</p>
-        <p class="text">Des ateliers, sur le thème de "Le virtuel pour influencer le réel" (sur la réalité virtuelle), serons animés tout le temps de la journée. Une conférence tenue par Monsieur <i>Gilles Simon</i> est prévue à 16h portant sur le thème "Quand l'informatique fait parler les tableaux", (<a href="./intervenant.php">voir la page intervenant</a>).</p>
+        <p class="text">Des ateliers, sur le thème de <i>«Le virtuel pour influencer le réel»</i> (sur la réalité virtuelle), serons animés tout le temps de la journée. Une conférence tenue par Monsieur <i>Gilles Simon</i> est prévue à 16h portant sur le thème <i>«Quand l'informatique fait parler les tableaux»</i>, (<a href="./intervenant.php">voir la page sur l'intervenant</a>).</p>
 
         <br><br><br>
         <h3>Ateliers proposés :</h3>
