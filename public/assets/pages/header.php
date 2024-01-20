@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?= $description_page ?? ''; ?>">
+    <meta name="keywords" content="Besancon, besaçon, rnday, R&D, R&DAY, R&Day, ofni, rnday,  R et D, Recherche, Développement, CMI, Informatique, VR, réalité virtuelle">
+    <link rel="canonical" href="http://rnday.ofni.asso.fr/" />
     <link rel="shortcut icon" type="image/icon" href="../favicon/icon.png"/>
     <link rel="meta" type="application/json" href="./meta.json">
     <link href="../../style.css" rel="stylesheet" type="text/css">
     <title><?= $title.' - '.$title_page ?? ''; ?></title>
+
+
+    <meta property="og:title" content="R&Day">
+    <meta property="og:description" content="Journée de Recherche et Développement (R&Day) du CMI Informatique de Besaçon - 2024. Cette journée porte sur le thème «Le virtuel pour influencer le réel» (sur la réalité virtuelle). Une conférence tenue par Monsieur Gilles Simon est prévue, portant sur le thème «Quand l'informatique fait parler les tableaux».">
+    <meta property="og:image" content="http://rnday.ofni.asso.fr/logo-partage.png">
+    <meta property="og:url" content="http://rnday.ofni.asso.fr/">
+    <meta property="og:type" content="website">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <head>

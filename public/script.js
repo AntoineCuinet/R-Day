@@ -8,6 +8,9 @@ window.addEventListener("load", function () {
     const hamburgerToggler = document.querySelector(".hamburger");
     const navLinksContainer = document.querySelector(".navlinks-container");
 
+    let startX; // Position X au début du touch
+    let distance; // Distance de glissement nécessaire pour fermer le menu
+
     const toggleNav = () => {
         hamburgerToggler.classList.toggle("open");
 
@@ -19,7 +22,30 @@ window.addEventListener("load", function () {
     hamburgerToggler.addEventListener("click", toggleNav);
 
 
-    // Ajoutez un gestionnaire d'événements pour le clic n'importe où sur le document
+    /* fermer le menu aux slides vers la gauche */
+    document.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+        distance = 50; // Vous pouvez ajuster cette valeur selon vos besoins
+    });
+    document.addEventListener("touchmove", function (e) {
+        if (startX) {
+            const currentX = e.touches[0].clientX;
+            const deltaX = startX - currentX;
+            // Si le glissement dépasse la distance définie, fermez le menu
+            if (deltaX > distance) {
+                navLinksContainer.classList.remove("open");
+                hamburgerToggler.classList.remove("open");
+                startX = null; // Réinitialisez la position de départ
+            }
+        }
+    });
+    // Réinitialisez la position de départ lorsque le doigt est levé
+    document.addEventListener("touchend", function () {
+        startX = null;
+    });
+
+    
+    /* fermer le menu si clic n'importe où sur le document */
     document.addEventListener("click", function (event) {
         // Vérifiez si le clic a eu lieu à l'extérieur du menu
         if (!navLinksContainer.contains(event.target) && !hamburgerToggler.contains(event.target)) {

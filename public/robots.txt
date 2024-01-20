@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /assets/pages/cookies.php
+Disallow: /assets/pages/mentions.php
+
+Sitemap: http://rnday.ofni.asso.fr/sitemap.xml

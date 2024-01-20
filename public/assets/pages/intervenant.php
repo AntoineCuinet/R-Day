@@ -12,7 +12,7 @@ $description_page = "Page de l'intervenant de la journée";
         <br><br><br><br>
 
         <article class="article-container-intervenant">
-            <img src="../pictures/image_template.jpeg" width="200px" height="200px" alt="photo du conférencier">
+            <img src="../pictures/image_template.jpeg" width="200px" height="200px" alt="photo du conférencier" loading="lazy">
             <h3>Conférencier</h3>
             <p>Infos conférencier(Simon) + biographie de lui de ce qu'il fait...</p>
         </article>
