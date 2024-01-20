@@ -71,13 +71,13 @@
     <!-- on met ici tout le contenu du site (dans des sections) -->
     <div class="contenu">
         <section class="main-section">
-            <img loading="lazy" src="./assets/pictures/bgim.png" alt="bg">
+            <img loading="lazy" src="./assets/pictures/bgim.png" alt="background-image">
             <div class="home-timer">
                 <h2>Votre journée dans</h2>
                 <h2 class="text-chronometre-home"></h2>
             </div>
             <div id="scrool-bottom">
-                <a href="#scrool-bottom"><img loading="lazy" src="./assets/pictures/arrow-down-circle-outline.svg" alt=""></a>
+                <a href="#scrool-bottom"><img loading="lazy" src="./assets/pictures/arrow-down-circle-outline.svg" alt="bouton pour descendre plus bas dans le site" title="descendre"></a>
             </div>
         </section>
         <section class="template-section">
@@ -100,26 +100,20 @@
             <div class="logo-slide-container">
                 <h3 class="logo-h3">Nos partenaires</h3>
                 <div class="logos-slide">
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" title="site UFR-ST" loading="lazy"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" title="site OFNI" loading="lazy"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" title="site Loria" loading="lazy"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" title="site UFR-ST" loading="lazy"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" title="site OFNI" loading="lazy"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" title="site Loria" loading="lazy"></a>
                 </div>
                 <div class="logos-slide">
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
-                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" loading="lazy"></a>
-                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" loading="lazy"></a>
-                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" loading="lazy"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" title="site UFR-ST" loading="lazy"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" title="site OFNI" loading="lazy"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" title="site Loria" loading="lazy"></a>
+                    <a href="https://www.univ-fcomte.fr/" target="_blank"><img src="./assets/logo/logo_ufr.png" alt="logo université de franche-comté" title="site UFR-ST" loading="lazy"></a>
+                    <a href="https://ofni.asso.fr/" target="_blank"><img src="./assets/logo/logo-ofni.png" alt="logo association OFNI" title="site OFNI" loading="lazy"></a>
+                    <a href="https://www.loria.fr/fr/" target="_blank"><img src="./assets/logo/logo_loria.png" alt="logo laboratoire de recherche Loria" title="site Loria" loading="lazy"></a>
                 </div>
             </div>
         </div>
@@ -127,7 +121,7 @@
 
     <!-- chronomètre -->
     <div class="chronometre">
-        <div class="corner-round"><img src="./assets/pictures/close.svg" alt="Minuteur" loading="lazy"></div>
+        <div class="corner-round"><img src="./assets/pictures/close.svg" alt="croix pour fermer le minuteur" title="fermer" loading="lazy"></div>
         <h4>Votre journée dans</h4>
         <h4 class="text-chronometre"></h4>
     </div>
@@ -135,7 +129,7 @@
 
     <!-- btn pour remonter en haut du site -->
     <div class="to-top-btn">
-        <img src="./assets/pictures/arrow-down-circle-outline.svg" alt="remonter" width="50px" height="50px">
+        <img src="./assets/pictures/arrow-down-circle-outline.svg" alt="bouton pour remonter en haut du site" title="remonter" width="50px" height="50px" loading="lazy">
     </div>
     <footer>
         <div class="contenu-footer">

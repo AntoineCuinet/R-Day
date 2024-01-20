@@ -4,14 +4,14 @@
 
     <!-- chronomètre -->
     <div class="chronometre">
-        <div class="corner-round"><img src="../pictures/close.svg" alt=""></div>
+        <div class="corner-round"><img src="../pictures/close.svg" alt="croix pour fermer le minuteur" title="fermer" loading="lazy"></div>
         <h4>Votre journée dans</h4>
         <h4 class="text-chronometre"></h4>
     </div>
 
     <!-- btn pour remonter en haut du site -->
     <div class="to-top-btn">
-        <img src="../pictures/arrow-down-circle-outline.svg" alt="" width="50px" height="50px">
+        <img src="../pictures/arrow-down-circle-outline.svg"  alt="bouton pour remonter en haut du site" title="remonter" width="50px" height="50px" loading="lazy">
     </div>
 
 
