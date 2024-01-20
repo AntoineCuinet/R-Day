@@ -71,6 +71,7 @@ footer {
                     a {
                         text-decoration : underline;
                         color: $font-color-principal;
+                        transition: 0.3s ease-out;
 
                         @media (prefers-color-scheme: dark) {
                             color: $font-color-dark;

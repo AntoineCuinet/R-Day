@@ -90,10 +90,19 @@
                 margin: 0 20px;
                 padding: 10px;
                 transition: 0.3s ease-out;
+                -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+                filter: grayscale(100%); /* Firefox */
+
+                @media screen and (max-width: $mq) {
+                    -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+                    filter: grayscale(0%); /* Firefox */
+                }
                 
                 &:hover {
                     transform: scale(1.05);
                     cursor: pointer;
+                    -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+                    filter: grayscale(0%); /* Firefox */
                 }
 
                 //empêcher séléction d'une image

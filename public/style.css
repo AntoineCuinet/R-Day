@@ -72,6 +72,7 @@ html {
 .template-section .template-container .text a {
   text-decoration: underline;
   color: #333;
+  transition: 0.3s ease-out;
 }
 @media (prefers-color-scheme: dark) {
   .template-section .template-container .text a {
@@ -79,7 +80,7 @@ html {
   }
 }
 .template-section .template-container .text a:hover {
-  color: rgb(0, 77, 149);
+  color: rgb(134, 92, 217);
 }
 .template-section .template-container h3,
 .template-section .template-container h4 {
@@ -184,6 +185,7 @@ footer .contenu-footer .bloc ul li span {
 footer .contenu-footer .bloc ul li a {
   text-decoration: underline;
   color: #333;
+  transition: 0.3s ease-out;
 }
 @media (prefers-color-scheme: dark) {
   footer .contenu-footer .bloc ul li a {
@@ -191,7 +193,7 @@ footer .contenu-footer .bloc ul li a {
   }
 }
 footer .contenu-footer .bloc ul li a:hover {
-  color: rgb(0, 77, 149);
+  color: rgb(134, 92, 217);
 }
 
 .infinit-part {
@@ -646,15 +648,25 @@ footer .contenu-footer .bloc ul li a:hover {
   margin: 0 20px;
   padding: 10px;
   transition: 0.3s ease-out;
+  -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+  filter: grayscale(100%); /* Firefox */
   user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
+@media screen and (max-width: 800px) {
+  .logos .logo-slide-container .logos-slide img {
+    -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(0%); /* Firefox */
+  }
+}
 .logos .logo-slide-container .logos-slide img:hover {
   transform: scale(1.05);
   cursor: pointer;
+  -webkit-filter: grayscale(0%); /* Pour les navigateurs Chrome, Safari, Opera */
+  filter: grayscale(0%); /* Firefox */
 }
 
 #navbar {
