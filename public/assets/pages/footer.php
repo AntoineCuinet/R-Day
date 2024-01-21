@@ -42,6 +42,14 @@
                     <li><a href="./mentions.php">Mentions légales</a></li>
                     <li><a href="./cookies.php">Cookies</a></li>
                 </ul>
+                <a class="lens-container" href="https://www.instagram.com/rnday_info?igsh=am0yam5yYXo1eDNq&utm_source=qr" target="_blank">
+                    <div class="button-lens">
+                        <div class="icon-lens">
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                        <span class="insta">Instagram -></span>
+                    </div>
+                </a>
             </div>
         </div>
     </footer>

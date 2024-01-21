@@ -62,7 +62,7 @@ $description_page = "Page de cookies";
         <br>
         <h3>6. Contactez-nous</h3>
         <p class="text">Si vous avez des questions sur notre politique de confidentialité des cookies, veuillez nous 
-            contacter à l'adresse suivante : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a>.</p>
+            contacter à l'adresse suivante : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a>.</p>
         <br>
         <h3>7. Modifications de la politique de confidentialité des cookies</h3>
         <p class="text">Nous nous réservons le droit de modifier cette politique de confidentialité des cookies à 

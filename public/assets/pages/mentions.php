@@ -26,7 +26,7 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <p class="text">Forme juridique : association</p>
         <p class="text">Adresse : 38 rue Charles Nodier 25000 Besançon</p>
         <p class="text">Téléphone : <a href="tel:#31#+33614226205">+33 6 14 22 62 05</a></p>
-        <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a></p>
+        <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a></p>
         <br>
         <br>
 
@@ -35,14 +35,14 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <p class="text">Nom : <a href="https://ofni.asso.fr/" target="_blank">ofni.asso.fr</a></p>
         <p class="text">Adresse : 38 rue Charles Nodier 25000 Besançon</p>
         <p class="text">Téléphone : <a href="tel:#31#+33614226205">+33 6 14 22 62 05</a></p>
-        <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a></p>
+        <p class="text">E-mail : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a></p>
         <br>
         <br>
 
         <!-- Informations complémentaires -->
         <h3>Responsable de la publication</h3>
         <p class="text">Nom : Tristan Amiotte-Suchet</p>
-        <p class="text">Contact : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a></p>
+        <p class="text">Contact : <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a></p>
         <br>
         <br>
 
@@ -72,7 +72,7 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <p class="text">Vous avez le droit d'accéder à vos informations personnelles, de les corriger, de 
             les mettre à jour, et de demander leur suppression. Si vous avez des questions 
             concernant vos droits, veuillez nous contacter à : 
-            <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a>.</p>
+            <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a>.</p>
         <br>
         <h3>6. Modifications de la politique de confidentialité</h3>
         <p class="text">Nous nous réservons le droit de mettre à jour notre politique de confidentialité à 
@@ -82,7 +82,7 @@ $description_page = "Page de mentions légales & Politique de confidentialité";
         <h3>7. Nous contacter</h3>
         <p class="text">Si vous avez des questions concernant notre politique de confidentialité, vous pouvez 
             nous contacter à l'adresse e-mail suivante : 
-            <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomtefr">contact@rday.fr</a>.</p>
+            <a href="mailto:tristan.amiotte-suchet@edu.univ-fcomte.fr">contact@rday.fr</a>.</p>
         <br>
     </div>
 </section>

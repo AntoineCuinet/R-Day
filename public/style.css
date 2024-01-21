@@ -687,6 +687,56 @@ footer .contenu-footer .bloc ul li a:hover {
   filter: grayscale(0%); /* Firefox */
 }
 
+.lens-container {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.32);
+  transition: 0.3s ease-out;
+  border: 2px solid #e1306c;
+  padding: 0;
+}
+.lens-container:hover {
+  width: 200px;
+}
+@media screen and (max-width: 800px) {
+  .lens-container:hover {
+    width: 50px;
+  }
+}
+.lens-container .button-lens {
+  display: flex; /* Utilisation de flex pour aligner verticalement et horizontalement */
+}
+.lens-container .button-lens .icon-lens {
+  display: inline-block;
+  height: 50px;
+  transform: translateX(-2px) translateY(-2px);
+  width: 50px;
+  padding: 3px 4px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+  background: #e1306c;
+  border-radius: 3px solid #e1306c;
+}
+.lens-container .button-lens .icon-lens i {
+  font-size: 43px;
+  transition: 0.3s ease-out;
+  color: #fff;
+}
+.lens-container .button-lens .insta {
+  color: #e1306c;
+  margin-left: 20px;
+  line-height: 50px; /* Ajout de la hauteur de ligne pour centrer verticalement */
+  text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #navbar {
   position: fixed;
   z-index: 4;

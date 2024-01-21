@@ -1,0 +1,53 @@
+.lens-container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: $box-shadaw;
+    transition: 0.3s ease-out;
+    border: 2px solid #e1306c;
+    padding: 0;
+
+    &:hover {
+        width: 200px;
+
+        @media screen and (max-width: $mq) {
+            width: 50px;
+        }
+    }
+
+    .button-lens {
+        display: flex; /* Utilisation de flex pour aligner verticalement et horizontalement */
+
+        .icon-lens {
+            display: inline-block;
+            height: 50px;
+            transform: translateX(-2px) translateY(-2px);
+            width: 50px;
+            padding: 3px 4px;
+            text-align: center;
+            border-radius: 50px;
+            box-sizing: border-box;
+            transition: 0.3s ease-out;
+            background: #e1306c;
+            border-radius: 3px solid #e1306c;
+
+            i {
+                font-size: 43px;
+                transition: 0.3s ease-out;
+                color: #fff;
+            }
+        }
+
+        .insta {
+            color: #e1306c;
+            margin-left: 20px;
+            line-height: 50px; /* Ajout de la hauteur de ligne pour centrer verticalement */
+            text-decoration: underline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+}

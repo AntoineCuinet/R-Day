@@ -24,8 +24,12 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
     <!-- font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap">
+
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>R&Day</title>
 </head>
 <body>
@@ -156,6 +160,14 @@
                     <li><a href="./assets/pages/mentions.php">Mentions légales</a></li>
                     <li><a href="./assets/pages/cookies.php">Cookies</a></li>
                 </ul>
+                <a class="lens-container" href="https://www.instagram.com/rnday_info?igsh=am0yam5yYXo1eDNq&utm_source=qr" target="_blank">
+                    <div class="button-lens">
+                        <div class="icon-lens">
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                        <span class="insta">Instagram -></span>
+                    </div>
+                </a>
             </div>
         </div>
     </footer>
