@@ -26,6 +26,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap">
 
     <!-- icon -->

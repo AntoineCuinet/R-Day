@@ -37,6 +37,13 @@ window.addEventListener("load", function () {
                 hamburgerToggler.classList.remove("open");
                 startX = null; // Réinitialisez la position de départ
             }
+
+            // Si le glissement dépasse la distance définie dans l'autre sens, ouvrez le menu
+            if (deltaX < -distance) {
+                navLinksContainer.classList.add("open");
+                hamburgerToggler.classList.add("open");
+                startX = null; // Réinitialisez la position de départ
+            }
         }
     });
     // Réinitialisez la position de départ lorsque le doigt est levé
