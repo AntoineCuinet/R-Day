@@ -67,6 +67,14 @@
                     <a href="../../index.php" aria-current="page" >Accueil</a>
                     <a href="./lieu.php">Informations</a>
                     <a href="./intervenant.php">Intervenant</a>
+                
+                    <a id="insta" class="lens-container" href="https://www.instagram.com/rnday_info?igsh=am0yam5yYXo1eDNq&utm_source=qr" target="_blank">
+                        <div class="button-lens">
+                            <div class="icon-lens">
+                                <i class='bx bxl-instagram'></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </nav>

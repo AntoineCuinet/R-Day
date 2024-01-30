@@ -22,7 +22,7 @@
             <div class="bloc footer-info">
                 <h3>Informations</h3>
                 <ul>
-                    <li><p><span>Lieu:</span> université de Franche-Comté, Besançon</p></li>
+                    <li><p><span>Lieu:</span> Université de Franche-Comté, Besançon</p></li>
                     <li><p><span>Jour:</span> mercredi 13 mars 2024</p></li>
                     <li><p><span>Horaires:</span> de 14h à 18h</p></li>
                 </ul>

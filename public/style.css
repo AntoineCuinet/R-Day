@@ -740,6 +740,21 @@ footer .contenu-footer .bloc ul li a:hover {
   font-size: larger;
 }
 
+@media screen and (min-width: 800px) {
+  #insta {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
+#insta:hover {
+  width: 50px;
+}
+
 #navbar {
   position: fixed;
   z-index: 4;

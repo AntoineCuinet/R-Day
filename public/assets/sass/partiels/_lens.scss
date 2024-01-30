@@ -54,3 +54,19 @@
         }
     }
 }
+
+#insta {
+    @media screen and (min-width: $mq) {
+        visibility: hidden;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    
+    &:hover {
+        width: 50px;
+    }
+}

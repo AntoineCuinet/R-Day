@@ -41,7 +41,7 @@ $description_page = "Page de l'intervenant de la journée";
         <h3>Programme :</h3>
         <br>
         <ul>
-            <li>Lieu : université de Franche-Comté, Besançon</li>
+            <li>Lieu : Université de Franche-Comté, Besançon</li>
             <li>Date : mercredi 13 mars 2024</li>
             <li>Heure : de 14h à 18h</li>
             <li>De 16h à 17h : Conférence par le professeur Gilles Simon</li>

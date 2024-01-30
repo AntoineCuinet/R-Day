@@ -68,6 +68,14 @@
                     <a href="./index.php" aria-current="page" >Accueil</a>
                     <a href="./assets/pages/lieu.php">Informations</a>
                     <a href="./assets/pages/intervenant.php">Intervenant</a>
+
+                    <a id="insta" class="lens-container" href="https://www.instagram.com/rnday_info?igsh=am0yam5yYXo1eDNq&utm_source=qr" target="_blank">
+                        <div class="button-lens">
+                            <div class="icon-lens">
+                                <i class='bx bxl-instagram'></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -88,12 +96,22 @@
         <section class="template-section">
             <div class="template-container">
                 <h1 class="template">R&Day</h1>
+                <br><br><br><br><br>
+                <h3>Qu'est-ce que la Journée R&Day ?</h3>
+                <p class="text">La Journée Recherche et Développement (R&D ou encore R&Day) a pour objectif de créer un environnement propice à l'apprentissage, à la discussion et à l'interaction entre les étudiants, les enseignants et des professionnels de l'industrie.</p>
                 <br>
-                <p class="text">qu'est-ce que la D&Day</p>
-                <p class="text">qui somme nous + notre parcours + CMI...</p>
-                <p class="text">pourquoi on organise ca + le but + la finalité </p>
-                <p class="text">quel est notre sujet + pourquoi on l'a choisi</p>
-                <p class="text">dire qu'on attend beaucoup de monde + qu'on a hate...</p>
+                <h3>Qui sommes nous ?</h3>
+                <p class="text">Nous sommes des étudiants en 2ème année de Licence d'informatique à l'Université de Franche-Comté de Besançon avec option Cursus Master en Ingénierie. Nous suivons un parcours universitaire scientifique de cinq ans (licence puis master) auquel sont ajoutés des cours de communication, connaissances du monde en entreprise, des projets individuels ou collectifs et stages, permettant au final d'obtenir, en plus du master classique, un label CMI.
+                C'est dans cette optique que nous organisons cette journée R&Day.
+                </p>
+                <br>
+                <h3>Quel est le sujet de la journée ?</h3>
+                <p class="text">Cette journée de Recherche et Développement tournera autour du thème de la réalité augmentée, avec comme sujet : «Quand l'informatique fait parler les tableaux». Notre choix pour le sujet de la réalité augmentée peut être justifié par son caractère novateur, son impact potentiel sur la vie quotidienne, sa polyvalence d'application, son influence sur l'interaction homme-machine, les défis qu'elle pose, ainsi que les opportunités et les évolutions futures qu'elle pourrait apporter.</p>
+                <br>
+                <h3>Venez nombeaux !</h3>
+                <p class="text">Participer à une journée R&D sur la réalité augmentée peut être bénéfique à la fois sur le plan professionnel et personnel, en offrant des opportunités d'apprentissage, de réseautage et d'inspiration, mais également en apprenant beaucoup sur le sujet de la réalité augmentée.</p>
+                <p class="text"><strong>Nous vous attendons nombreux !</strong></p>
+                <br>
 
                 <p class="text">Pour plus d'information sur le déroulement de la journée, <a href="./assets/pages/lieu.php">voir la page d'informations</a>, et pour sur la conférence, <a href="./assets/pages/intervenant.php">voir la page sur l'intervenant de la journée</a>.</p>
             </div>
@@ -141,7 +159,7 @@
             <div class="bloc footer-info">
                 <h3>Informations</h3>
                 <ul>
-                    <li><p><span>Lieu:</span> université de Franche-Comté, Besançon</p></li>
+                    <li><p><span>Lieu:</span> Université de Franche-Comté, Besançon</p></li>
                     <li><p><span>Jour:</span> mercredi 13 mars 2024</p></li>
                     <li><p><span>Horaires:</span> de 14h à 18h</p></li>
                 </ul>
