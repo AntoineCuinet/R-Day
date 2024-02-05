@@ -26,7 +26,7 @@ $description_page = "Page d'information sur le lieu de la journée";
         <br><br><br>
         <h3>Ateliers proposés :</h3>
         <br>
-        <p class="text">Des ataliers, animés par les étudiants d'informatiques de l'université, serons présentés tout au long de la journée, en voici la liste :</p>
+        <p class="text">Des ateliers, animés par les étudiants d'informatiques de l'université, serons présentés tout au long de la journée, en voici la liste :</p>
         <ul>
             <li>blabla</li>
             <li>blabla</li>

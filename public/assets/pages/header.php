@@ -79,6 +79,10 @@
             </div>
         </nav>
     </head>
+    <!-- loader -->
+    <div class="loader">
+        Loading...
+    </div>
     <br><br>
     
 

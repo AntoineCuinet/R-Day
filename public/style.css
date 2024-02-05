@@ -749,10 +749,37 @@ footer .contenu-footer .bloc ul li a:hover {
     padding: 0;
     margin: 0;
     border: none;
+    transition: none;
   }
 }
 #insta:hover {
   width: 50px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  background: #306ff6;
+  color: rgba(30, 18, 51, 0.6666666667);
+  transition: opacity 0.4s ease-out;
+}
+@media (prefers-color-scheme: dark) {
+  .loader {
+    background: #004d95;
+    color: #c0c0c0;
+  }
+}
+
+.loader.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
 }
 
 #navbar {

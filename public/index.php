@@ -34,6 +34,14 @@
     <title>R&Day</title>
 </head>
 <body>
+
+    <!-- loader -->
+    <div class="loader">
+        Loading...
+    </div>
+
+
+
     <head>
         <!-- bandeau infini -->
         <section class="infinit-part">

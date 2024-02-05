@@ -2,7 +2,18 @@
 /* Ceci permet d'inporter ici les fichiers necessaires afin de couper le code en plusieurs fichiers */
 //import nomDefault, {nomExport1 as newName, nomExport2} from "./assets/scripts/nomFichier.js"
 
+
+// loading page
+const loader = document.querySelector('.loader');
+
+
 window.addEventListener("load", function () {
+
+    loader.classList.add('fondu-out');
+    this.setTimeout(() => {
+        loader.style.display = "none";
+    }, 400);
+    
 
     /* nav-bar (hamburger) */
     const hamburgerToggler = document.querySelector(".hamburger");
