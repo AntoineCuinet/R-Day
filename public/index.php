@@ -125,7 +125,7 @@
             <div class="template-container">
                 <div class="affiche">
                     <a href="./assets/pictures/RNDAY_flyer.png" target="_blank">
-                        <img src="./assets/pictures/RNDAY_flyer.png" alt="flyer de la journée">
+                        <img src="./assets/pictures/RNDAY_flyer.png" alt="flyer de la journée" loading="lazy">
                     </a>
                     <h3>L'affiche de votre journée !</h3>
                     <p></p>
