@@ -9,5 +9,15 @@
         border-radius: 10px;
         box-shadow: $box-shadaw;
         background: $font-color-dark;
+
+        opacity: 0;
+        transform: translateY(10%);
+        animation: 1s titleanimate 1.5s linear forwards;
+
+        @keyframes titleanimate {
+            0% { opacity: 0; }
+            80% { opacity: .8; transform: translateX(0);}
+            100% { opacity: 1; transform: translateX(0);}
+        }
     }
 }

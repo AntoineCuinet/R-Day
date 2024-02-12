@@ -18,12 +18,22 @@
         -moz-user-select: none;
         -ms-user-select: none;
 
+        animation: headerimageanimation linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+
         @media (prefers-color-scheme: dark) {
             filter: brightness(50%);
         }
         
         @media screen and (max-width: $mq) {
+            animation: none;
             padding-top: 50px;
+        }
+
+        @keyframes headerimageanimation {
+            25% { opacity: 1;}
+            85%, 100% { opacity: 0; scale: 2;}
         }
     }
 
@@ -45,6 +55,14 @@
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         color: $blanc-color;
+
+        animation: fadeout linear;
+        animation-timeline: view();
+        animation-range: exit -150%;
+
+        @keyframes fadeout {
+            to { opacity: 0;} 
+        }
 
 
         @media screen and (max-width: $mq) {

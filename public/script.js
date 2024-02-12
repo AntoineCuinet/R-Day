@@ -36,7 +36,7 @@ window.addEventListener("load", function () {
     /* fermer le menu aux slides vers la gauche */
     document.addEventListener("touchstart", function (e) {
         startX = e.touches[0].clientX;
-        distance = 50; // Vous pouvez ajuster cette valeur selon vos besoins
+        distance = 150; // Vous pouvez ajuster cette valeur selon vos besoins
     });
     document.addEventListener("touchmove", function (e) {
         if (startX) {

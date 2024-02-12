@@ -10,9 +10,9 @@ $description_page = "Page d'information sur le lieu de la journée";
     <div class="template-container">
         <h1 class="template"><?= $title_page; ?></h1>
         <br><br><br><br><br>
-        <h3>Lieu de la journée :</h3>
+        <h3 class="animbegintext">Lieu de la journée :</h3>
         <br>
-        <p class="text">Hall Propédeutique, 43 Avenue de l'Observatoire, 25000 Besançon <i>(Des places de parking <strong>gratuites</strong> sont disponible juste à coté, sur le parc de stationnement de l'université)</i></p>
+        <p class="text animbegintext">Hall Propédeutique, 43 Avenue de l'Observatoire, 25000 Besançon <i>(Des places de parking <strong>gratuites</strong> sont disponible juste à coté, sur le parc de stationnement de l'université)</i></p>
         <p class="text google" >
             <iframe title="google-map: Hall Propédeutique, 25000 Besançon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1412.2739565775137!2d5.983148565176012!3d47.245598446146495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d634be6c23c1b%3A0x11d6ff2c8de3bcac!2sHall%20Prop%C3%A9deutique!5e1!3m2!1sfr!2sfr!4v1705593389455!5m2!1sfr!2sfr" height="450" class="google-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </p>

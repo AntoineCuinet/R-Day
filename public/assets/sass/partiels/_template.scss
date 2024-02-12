@@ -24,6 +24,13 @@
         .text {
             padding: 20px 10%;
             text-align: justify;
+            opacity: 0;
+            animation: fadein linear forwards;
+            animation-timeline: view();
+            animation-range: 100px 300px;
+            @keyframes fadein {
+                to { opacity: 1;}
+            }
 
             a {
                 text-decoration : underline;
@@ -41,14 +48,86 @@
             }
         }
 
+        .animbegintext {
+            opacity: 0;
+            transform: translateY(10%);
+            animation: 1s titleanimate 1s linear forwards;
+
+            @keyframes titleanimate {
+                0% { opacity: 0; }
+                80% { opacity: .8; transform: translateX(0);}
+                100% { opacity: 1; transform: translateX(0);}
+            }
+        }
+
+        .affiche-text-dessous {
+            clear: right;
+        }
+
+        .affiche {
+            h3 {
+                padding: 100px 10% 20px 10%;
+                scale: .8;
+                opacity: 0;
+
+                animation: fadein linear forwards;
+                animation-timeline: view();
+                animation-range: 250px 500px;
+
+                @keyframes fadein {
+                    to { scale: 1; opacity: 1;}
+                }
+            }
+
+            img {
+                float: right;
+                width: 60%;
+                margin: 50px 0px;
+                padding: 0px 10% 0px 0px;
+                scale: .8;
+                opacity: 0;
+
+                animation: fadein linear forwards;
+                animation-timeline: view();
+                animation-range: 250px 500px;
+
+                @keyframes fadein {
+                    to { scale: 1; opacity: 1;}
+                }
+            }
+        }
+
+
         h3,
         h4 {
             text-align: left;
             padding: 0 0 0 15px;
             font-weight: bold;
         }
+
+        h3 {
+            opacity: 0;
+            animation: fadein linear forwards;
+            animation-timeline: view();
+            animation-range: 100px 300px;
+            @keyframes fadein {
+                to { opacity: 1;}
+            }
+        }
+
         h4 {
             padding: 0 0 0 30px;
+        }
+
+        h1 {
+            opacity: 0;
+            transform: translateY(30%);
+            animation: .8s titleanimate .4s linear forwards;
+
+            @keyframes titleanimate {
+                from { opacity: 0; }
+                to { opacity: 1; transform: translateX(0);}
+            }
         }
 
 
