@@ -1,6 +1,6 @@
 <?php 
 $title = 'R&Day';
-$title_page = 'Infomations';
+$title_page = 'Informations';
 $description_page = "Page d'information sur le lieu de la journée";
 ?>
 <?php include('header.php'); ?>
@@ -27,18 +27,21 @@ $description_page = "Page d'information sur le lieu de la journée";
         <h3>Ateliers proposés :</h3>
         <br>
         <p class="text">Des ateliers, animés par les étudiants d'informatiques de l'université, serons présentés tout au long de la journée, en voici la liste :</p>
-        <ul>
-            <li>blabla</li>
-            <li>blabla</li>
-            <li>blabla</li>
-            <li>blabla</li>
-            <li>blabla</li>
-        </ul>
+
+        <dl>
+            <dt>Vision par ordinateur & reconnaissance faciale: Comment l'ordinateur interagit avec notre monde</dt>
+            <dd>Venez découvrir l'histoire la reconnaissance faciale et les multiples applications actuelles ou futures influant notre quotidien de la vision par ordinateur.
+Nous aurons à disposition des activités de démonstration telles qu'un système simple de reconnaissance faciale d'individus conçue par nos soins.</dd>
+
+            <dt>Découverte de la photogramétrie</dt>
+            <dd>La photogrammétrie est une méthode fréquemment utilisée pour obtenir une modélisation tridimensionnelle d'une scène. Elle est régulièrement utilisée au cinéma dans des films comme Matrix. Mais elle est également utilisée pour modéliser des architectures antiques ou modernes à des fins de conservation. 
+            Elle permet de générer à l'aide d'un grand nombre de règles mathématiques un plan 3D d'une scène à partir de photos de ce dernier, prises chacune sous un angle différent.</dd>
+        </dl>
 
         <br><br><br>
         <h3>Autres :</h3>
         <br>
-        <p class="text">Des écocup (gobelets) aux couleurs de la journée vous serons offert ainsi qu'un buffet.</p>
+        <p class="text">Des écocup (gobelets) aux couleurs de la faculté vous serons offert ainsi qu'un buffet.</p>
         <p class="text">Toute l'équipe organisatrice vous attend avec impatience pour cette journée !</p>
     </div>
 </section>

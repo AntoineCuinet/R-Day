@@ -18,9 +18,9 @@
         -moz-user-select: none;
         -ms-user-select: none;
 
-        animation: headerimageanimation linear forwards;
-        animation-timeline: view();
-        animation-range: exit;
+        // animation: headerimageanimation linear forwards;
+        // animation-timeline: view();
+        // animation-range: exit;
 
         @media (prefers-color-scheme: dark) {
             filter: brightness(50%);

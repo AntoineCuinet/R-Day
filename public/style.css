@@ -198,6 +198,25 @@ html {
 .template-section .template-container ul li {
   padding-bottom: 10px;
 }
+.template-section .template-container dl {
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.template-section .template-container dl dt {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.template-section .template-container dl dt::before {
+  content: "• ";
+  text-decoration: none;
+}
+.template-section .template-container dl dd {
+  margin-left: 3%;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
 
 footer {
   flex-shrink: 0;
@@ -384,9 +403,6 @@ footer .contenu-footer .bloc ul li a:hover {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  animation: headerimageanimation linear forwards;
-  animation-timeline: view();
-  animation-range: exit;
 }
 @media (prefers-color-scheme: dark) {
   .main-section img {

@@ -158,5 +158,28 @@
                 padding-bottom: 10px;
             }
         }
+
+        dl {
+            text-align: left;
+            margin-left: 10%;
+            margin-right: 10%;
+          
+            dt {
+                font-weight: bold;
+                text-decoration: underline;
+
+                &::before {
+                    content: '• ';
+                    text-decoration: none;
+                }
+            }
+
+            dd {
+                margin-left: 3%;
+                padding-top: 5px;
+                padding-bottom: 15px;
+                text-align: justify;
+            }
+        }
     }
 }
