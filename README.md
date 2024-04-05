@@ -7,4 +7,4 @@ Ce projet à été réalisé pour la journée de recherche et développement (RD
 Ce site est un site vitrine présentant toute la journée.
 
 
-<img src="./public/assets/pictures/img-article/RD_main.png" alt="image of the main page of the website" width="600">
+<img src="https://acuinet.fr/assets/pictures/img-article/RD_main.png" alt="image of the main page of the website" width="600">
